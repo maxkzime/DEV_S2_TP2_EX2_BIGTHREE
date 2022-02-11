@@ -12,11 +12,11 @@ class BasketballPlayer
 {
 private:
     std::string itsName;
-    int itsGamesNB;
+    int itsGamesNb;
     int itsScore;
 
 public:
-    BasketballPlayer(std::string name, int gamesNB, int score);
+    BasketballPlayer(std::string name, int gamesNb, int score);
     double computeScorePerGame();
     const std::string &getItsName() const;
 };

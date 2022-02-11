@@ -3,7 +3,6 @@
 // BODIN Maxime C2
 // 22/10/02
 
-#include <iostream>
 #include <string>
 
 #include "basketballplayer.h"
@@ -13,12 +12,12 @@ const std::string &BasketballPlayer::getItsName() const
     return itsName;
 }
 
-BasketballPlayer::BasketballPlayer(std::string name, int gamesNB, int score)
+BasketballPlayer::BasketballPlayer(std::string name, int gamesNb, int score)
 {
-    itsName = name; itsGamesNB = gamesNB; itsScore = score;
+    itsName = name; itsGamesNb = gamesNb; itsScore = score;
 }
 
 double BasketballPlayer::computeScorePerGame()
 {
-    return itsScore / itsGamesNB;
+    return itsScore / itsGamesNb;
 }

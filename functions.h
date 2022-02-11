@@ -11,12 +11,18 @@
 
 #include "basketballplayer.h"
 
+// Best player ever = best Average score
+// param : vector of the players
+// return : the best player name
 std::string bestPlayerEver(std::vector<BasketballPlayer> team);
 
-
+// foncteur to sort the vector
+// param : 2 players
+// return : bool of the best player
 bool sortBasketballPlayer(BasketballPlayer& bbp1, BasketballPlayer& bbp2);
 
-
+// foncteur to print the names of the players
+// param : a player
 void displayBasketballPlayer(BasketballPlayer& bbp);
 
 
