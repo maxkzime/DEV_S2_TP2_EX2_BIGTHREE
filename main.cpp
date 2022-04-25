@@ -4,7 +4,6 @@
 // 22/10/02
 
 #include <iostream>
-#include <string>
 #include <vector>
 #include <algorithm>
 

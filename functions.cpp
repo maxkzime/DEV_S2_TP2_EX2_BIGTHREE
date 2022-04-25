@@ -4,8 +4,6 @@
 // 22/10/02
 
 #include <iostream>
-#include <string>
-#include <vector>
 
 #include "functions.h"
 #include "basketballplayer.h"
@@ -19,7 +17,7 @@ std::string bestPlayerEver(std::vector<BasketballPlayer> team)
     std::string bestPlayerName = team.begin()->getItsName();
 
     //for(std::vector<BasketballPlayer>::iterator it = team.begin();it != team.end(); ++it)
-    for(auto it : team)
+    for(BasketballPlayer it : team)
     {
         if(it.computeScorePerGame() > bestAverageScore)
         {
@@ -31,13 +29,13 @@ std::string bestPlayerEver(std::vector<BasketballPlayer> team)
     return bestPlayerName;
 }
 
+
 // foncteur to sort the vector
 // param : 2 players
 // return : bool of the best player
 bool sortBasketballPlayer(BasketballPlayer& bbp1, BasketballPlayer& bbp2)
-{
-    return (bbp1.computeScorePerGame() > bbp2.computeScorePerGame());
-}
+{return (bbp1.computeScorePerGame() > bbp2.computeScorePerGame());}
+
 
 // foncteur to print the names of the players (and their score per game)
 // param : a player

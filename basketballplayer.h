@@ -16,7 +16,14 @@ private:
     int itsScore;
 
 public:
-    BasketballPlayer(std::string name, int gamesNb, int score);
+    BasketballPlayer(std::string name,
+                     int gamesNb,
+                     int score) :
+        itsName(name),
+        itsGamesNb(gamesNb),
+        itsScore(score)
+    {}
+
     double computeScorePerGame();
     const std::string &getItsName() const;
 };
